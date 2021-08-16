@@ -2,7 +2,10 @@ package main
 
 import "fmt"
 
-// 无敌
+// 来自腾讯面试
+// @Author: hyc
+// @Description:
+// @Date: 2021/8/16 3:31 下午
 func main() {
 	// 归并排序
 	var (
