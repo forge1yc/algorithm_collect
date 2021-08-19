@@ -7,7 +7,7 @@ import (
 
 // 称最多水的容器经典题目
 // @Author: hyc
-// @Description: 字节一面面试题，跪了，丢人，这么简单
+// @Description: 字节一面面试题，跪了，丢人，这么简单，如果见到接雨水（hard）建议放弃
 // @Date: 2021/8/19 9:29 下午
 func main() {
 
