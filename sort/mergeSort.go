@@ -14,6 +14,7 @@ func main() {
 
 	ans := mergeSort(nums)
 
+
 	fmt.Printf("%+v\n",ans)
 
 }
