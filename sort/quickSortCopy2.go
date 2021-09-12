@@ -23,6 +23,7 @@ func quickSortCopy2(nums []int, left, right int) {
 		p := partitionCopy2(nums, left, right)
 		quickSortCopy2(nums, left, p-1)
 		quickSortCopy2(nums, p+1, right)
+
 	}
 }
 
