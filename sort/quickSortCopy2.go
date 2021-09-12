@@ -9,30 +9,30 @@ import "fmt"
 func main() {
 
 	var (
-		nums = []int{9,8,7,6,5,4,3,2,1}
+		nums = []int{9, 8, 7, 6, 5, 4, 3, 2, 1}
 	)
 
-	quicksort2(nums,0,len(nums)-1)
+	quickSortCopy2(nums, 0, len(nums)-1)
 
-	fmt.Printf("%+v\n",nums)
+	fmt.Printf("%+v\n", nums)
+
 }
 
-func quicksort2(nums []int,left,right int) {
-
+func quickSortCopy2(nums []int, left, right int) {
 	if left < right {
-		piv := partition2(nums,left,right)
-		quicksort2(nums,left,piv-1)
-		quicksort2(nums,piv+1,right)
+		p := partitionCopy2(nums, left, right)
+		quickSortCopy2(nums, left, p-1)
+		quickSortCopy2(nums, p+1, right)
 	}
 }
 
-func partition2(nums []int,left,right int) int {
+func partitionCopy2(nums []int, left, right int) int {
 
-	piv := nums[left];
+	piv := nums[left]
 
 	for left < right {
 
-		for nums[right] > piv && left < right {
+		for nums[right] >= piv && left < right {
 			right--
 		}
 		nums[left] = nums[right]
@@ -40,11 +40,9 @@ func partition2(nums []int,left,right int) int {
 			left++
 		}
 		nums[right] = nums[left]
-
 	}
-	nums[left] = piv
+
+	nums[left] = right
 
 	return left
-
 }
-
