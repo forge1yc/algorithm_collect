@@ -1,1 +1,3 @@
-module "algorithm_collect"
+module algorithm_collect
+
+go 1.15
